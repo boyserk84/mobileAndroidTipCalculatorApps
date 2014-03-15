@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="natemobile.apps.tipcalculator.CalculateActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <SeekBar
+        android:id="@+id/sbarPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eTextAmount"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+        android:id="@+id/tvPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sbarPercent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="39dp"
+        android:text="@string/percentInstruction" />
+
+    <EditText
+        android:id="@+id/eTextAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvPercentValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sbarPercent"
+        android:layout_centerHorizontal="true"
+        android:text="0" />
+
+    <SeekBar
+        android:id="@+id/sbSplitPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvPercentValue"
+        android:layout_marginTop="49dp" />
+
+    <TextView
+        android:id="@+id/tvSpilt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/tvSplitInstruction" />
+
+    <TextView
+        android:id="@+id/tvSplitPeopleValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sbSplitPeople"
+        android:layout_centerHorizontal="true"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvSpilt"
+        android:layout_below="@+id/tvSplitPeopleValue"
+        android:layout_marginTop="64dp"
+        android:text="Tip Value: $0.00"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+

@@ -91,31 +91,36 @@ public class CalculateActivity extends ActionBarActivity {
 	 * Setup UI elements listeners
 	 */
 	public void setupUIListeners() {
+		setupEditTextListeners();
+		setupSeekBarsListeners();
+	}
+	
+	/**
+	 * Setup EditText Listeners 
+	 */
+	private void setupEditTextListeners() {
 		// This is for input edit-text field
 		if ( etAmountValueText != null ) {
 			etAmountValueText.addTextChangedListener( new TextWatcher() {
-				
+
 				@Override
 				public void onTextChanged(CharSequence s, int start, int before, int count) {
-					
+
 				}
-				
+
 				@Override
 				public void beforeTextChanged(CharSequence s, int start, int count,
 						int after) {
 				}
-				
+
 				@Override
 				public void afterTextChanged(Editable s) {
 					amountValue = Float.parseFloat( s.toString() );
-					
+
 					updateActualAndDisplayedResult();
 				}
 			});
-		}
-		
-		setupSeekBarsListeners();
-		
+		}	
 	}
 	
 	/** Setup SeekBars Listeners */

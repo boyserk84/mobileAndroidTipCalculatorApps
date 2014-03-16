@@ -1,24 +1,23 @@
 package natemobile.apps.tipcalculator;
 
-import java.text.DecimalFormat;
-
+import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
-import android.os.Build;
 
+/**
+ * Calculate Activity
+ * 
+ * Tip Calculator App main activity
+ * @author nkemavaha
+ *
+ */
 public class CalculateActivity extends ActionBarActivity {
 
 	///////////////////////////
@@ -115,7 +114,14 @@ public class CalculateActivity extends ActionBarActivity {
 
 				@Override
 				public void afterTextChanged(Editable s) {
-					amountValue = Float.parseFloat( s.toString() );
+					
+					String num = s.toString();
+					// Checking in case if user delete all value in the Editable field.
+					if ( num != null && num.isEmpty() == false) {
+						amountValue = Float.parseFloat( s.toString() );
+					} else {
+						amountValue = 0;
+					}
 
 					updateActualAndDisplayedResult();
 				}

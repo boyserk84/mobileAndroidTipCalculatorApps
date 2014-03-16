@@ -13,9 +13,9 @@ This app will run on Android OS.
 -------------------------
   Additional Features:
 -------------------------
-- User changes the total amount and updated tip is reflected automatically
-- User can select custom tip amount if desired using sideBar.
-- Additional option for calculate tip per person if share costs among other people.
+    - User changes the total amount and updated tip is reflected automatically
+    - User can select custom tip amount if desired using sideBar.
+    - Additional option for calculate tip per person if share costs among other people.
  
 ------------------------
 User Stories Included

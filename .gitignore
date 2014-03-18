@@ -1,1 +1,2 @@
-bin/*
+# Ignore bin folder and its subdirectories
+bin/**/* 

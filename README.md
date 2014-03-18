@@ -16,9 +16,8 @@ This app will run on Android OS.
     - User changes the total amount and updated tip is reflected automatically
     - User can select custom tip amount if desired using sideBar.
     - Additional option for calculate tip per person if share costs among other people.
- 
 ------------------------
-User Stories Included
+ User Stories Included
 -----------------------
 Required
 - User is displayed the tip of specified percentage for specified entered amount
@@ -29,8 +28,8 @@ Required
 Optional
 - (Optional) User changes the total amount and updated tip is reflected automatically
 - (Optional) User can select custom tip amount if desired (via SeekBar).
-- (Optional) Experiment with trying input widgets to replace the buttons and/or textviews
-
-Upcoming
-- (Optional) Improve the user interface and experience by using images or colors!
-
+- (Optional) Experiment with trying input widgets to replace the buttons and/or textviews, (using SeekBar).
+-------------
+ Screenshot
+-------------
+![Alt text](android_proj_tip_calculator.png "Main App Screenshot")

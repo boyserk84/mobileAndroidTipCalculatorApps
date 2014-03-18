@@ -73,6 +73,18 @@
         android:layout_below="@+id/tvSplitPeopleValue"
         android:layout_marginTop="64dp"
         android:text="Tip Value: $0.00"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/eTextAmount"
+        android:layout_marginTop="26dp"
+        android:text="@string/headerInstruct"
+        android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

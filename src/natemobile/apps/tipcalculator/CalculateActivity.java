@@ -20,6 +20,9 @@ import android.widget.TextView;
  */
 public class CalculateActivity extends ActionBarActivity {
 
+	/** Initial % value */
+	float INIT_PERCENT_VALUE = 15.00f;
+	
 	///////////////////////////
 	/// UI elements
 	///////////////////////////
@@ -134,7 +137,14 @@ public class CalculateActivity extends ActionBarActivity {
 
 		// This is for percentage seek bar
 		if ( percentSeekBar != null ) {
-			tvPercentValueShow.setText( "0%" );
+			// Initialize starting value
+			tvPercentValueShow.setText( "15%" );
+			percentSeekBar.setProgress( (int) INIT_PERCENT_VALUE );
+			percentValue = percentSeekBar.getProgress();
+			tvPercentValueShow.setText( percentValue + "%");
+			updateActualAndDisplayedResult();
+			
+			// Setup listener
 			percentSeekBar.setOnSeekBarChangeListener( new OnSeekBarChangeListener() {
 
 				@Override
@@ -158,6 +168,7 @@ public class CalculateActivity extends ActionBarActivity {
 
 			});	
 		}
+		
 		
 		// This is for percentage seek bar
 		if ( peopleSeekBar != null ) {

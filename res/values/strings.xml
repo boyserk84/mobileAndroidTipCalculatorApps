@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="percentInstruction">Tip Percentage</string>
     <string name="tvSplitInstruction">How many people we split the bill?</string>
+    <string name="headerInstruct">Please enter your amount:</string>
 
 </resources>

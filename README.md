@@ -29,7 +29,8 @@ Optional
 - (Optional) User changes the total amount and updated tip is reflected automatically
 - (Optional) User can select custom tip amount if desired (via SeekBar).
 - (Optional) Experiment with trying input widgets to replace the buttons and/or textviews, (using SeekBar).
+
 -------------
  Screenshot
 -------------
-![Alt text](android_proj_tip_calculator.png "Main App Screenshot")
+![Alt text](android_proj_tip_calculator.PNG "Main App Screenshot")
